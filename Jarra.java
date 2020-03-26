@@ -32,6 +32,19 @@ public class Jarra { //variables de instancia
 	public void metodoComunitario(){ // Comentario incluido para pruebas
 		System.out.println("Aqui escribimos todos");
 	}
-	
 
+	public Object clone() throws CloneNotSupportedException{
+		return (Jarra) super.clone();
+	}
+
+	public bool equals(JarraotraJarra){
+		bool eqs= false;
+		if (null == otraJarra){eqs= false;}
+		else if (this == otraJarra){eqs= true;}
+		else if (otraJarrainstanceOfJarra.class){
+			eqs= this.capacidad== otraJarra.capacidad &&
+			this.cantidad== otraJarra.cantidad;
+		} else {eqs= false;}
+		return eqs;
+	}
 }
