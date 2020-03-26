@@ -40,9 +40,12 @@ public class Jarra { //variables de instancia
 
 	public void metodoComunitario(){ // Comentario incluido para pruebas
 		System.out.println("Aqui escribimos todos");
-		System.out.println("Óscar Fernández Díaz");
+		System.out.println("Adrián Corrales Moreno");
 		System.out.println("Jose Maria Dominguez Perez");
+		System.out.println("Javier Martín Sendra");
+		System.out.println("Óscar Fernández Díaz");
 	}
+
 
 	public Object clone() throws CloneNotSupportedException{
 		return (Jarra) super.clone();
@@ -59,4 +62,3 @@ public class Jarra { //variables de instancia
 		return eqs;
 	}
 }
-//>>>>>>> 6978fb10e3b1a061eb94ebe5169d6a9ecff5aca3
