@@ -7,6 +7,7 @@ public class Jarra { //variables de instancia
 			throw new RuntimeException("ERROR: no se pueden crear jarras “ + "con capacidad menor o igual que cero.");
 		}
 		this.capacidad=capacidadInicial;
+<<<<<<< HEAD
 	}
 
 	public bool llena(){
@@ -15,5 +16,34 @@ public class Jarra { //variables de instancia
 
 	public bool vacia(){
 		return this.cantidad=0;
+=======
+	} //  Aquí vendrán después los métodos creados en la siguiente fase
+	public void llenaDesde(Jarra j){
+		while((this.cantidad<this.capacidad)&&(j.cantidad>0)){
+		this.cantidad++;
+		j.cantidad--;
+		}
+		}
+		public String toString(){
+		return ("("+this.capacidad+","+this.cantidad+")");
+		}
+	public void metodoComunitario(){ // Comentario incluido para pruebas
+		System.out.println("Aqui escribimos todos");
+>>>>>>> 97145f0fed3c54b8f66b5154cca8c4726134376b
+	}
+
+	public Object clone() throws CloneNotSupportedException{
+		return (Jarra) super.clone();
+	}
+
+	public bool equals(JarraotraJarra){
+		bool eqs= false;
+		if (null == otraJarra){eqs= false;}
+		else if (this == otraJarra){eqs= true;}
+		else if (otraJarrainstanceOfJarra.class){
+			eqs= this.capacidad== otraJarra.capacidad &&
+			this.cantidad== otraJarra.cantidad;
+		} else {eqs= false;}
+		return eqs;
 	}
 }
