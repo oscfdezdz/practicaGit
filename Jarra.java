@@ -5,8 +5,20 @@ public class Jarra { //variables de instancia
 		if(capacidadInicial<=0){
 			throw new RuntimeException("ERROR: no se pueden crear jarras “ + "con capacidad menor o igual que cero.");
 			}
-		this.capacidad=capacidadInicial;}//  Aquí vendrán después los métodos creados en la siguiente fase
-	public void metodoComunitario(){ // Comentario incluido para pruebas
-		System.out.println("Aqui escribimos todos");
+		this.capacidad=capacidadInicial;
+		}
+
+	public Object clone() throws CloneNotSupportedException{
+		return (Jarra) super.clone();
 	}
+	public bool equals(JarraotraJarra){
+		bool eqs= false;
+		if (null == otraJarra){eqs= false;}
+		else if (this == otraJarra){eqs= true;}
+		else if (otraJarrainstanceOfJarra.class){
+			eqs= this.capacidad== otraJarra.capacidad &&
+			this.cantidad== otraJarra.cantidad;
+		} else {eqs= false;}
+		return eqs;
+	} 
 }
