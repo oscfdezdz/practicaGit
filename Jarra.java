@@ -42,7 +42,9 @@ public class Jarra { //variables de instancia
 		System.out.println("Aqui escribimos todos");
 		System.out.println("Adrián Corrales Moreno");
 		System.out.println("Jose Maria Dominguez Perez");
+		System.out.println("Javier Martín Sendra");
 	}
+
 
 	public Object clone() throws CloneNotSupportedException{
 		return (Jarra) super.clone();
